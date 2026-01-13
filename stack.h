@@ -18,8 +18,8 @@ typedef struct stack_t {
 } stack_t;
 
 stack_t *initstack();
-void* pop(stack_t* s);
-void push(stack_t* s, void* item);
+char* pop(stack_t* s);
+void push(stack_t* s, char* item);
 void freestack(stack_t* s);
 void printstack(stack_t* s);
 

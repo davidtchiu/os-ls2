@@ -48,9 +48,8 @@ void push(stack_t* s, void* item) {
  * @param s pointer to a stack_t
  */
 void freestack(stack_t* s) {
-  while (s->size) {
-    void* ret  = pop(s);
-    free(ret);
+  while (s->size > 0) {
+    pop(s);
   }
   free(s);
 }

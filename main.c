@@ -18,7 +18,13 @@ int main(int argc, char* argv[]) {
 	// print stack
 	printstack(s);
 
-	// free up stack
+	char *top = pop(s);
+	printf("Top of stack: %s\n", top);
+
+	// print stack
+	printstack(s);
+
+	// free stack
 	freestack(s);
 	return 0;
 }
